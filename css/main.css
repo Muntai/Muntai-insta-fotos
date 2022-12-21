@@ -7,7 +7,7 @@
 :root {
 	--gap: .5em;
 	--index: calc(1vw + 1vh);
-	--color-darc: #000;	
+	--color-darc: #000;
 }
 
 body {
@@ -76,8 +76,34 @@ body {
 	body {
 		background-color: var(--color-darc);
 	}
+
 	.header {
 		filter: invert(100%);
 	}
 }
 
+/* MOBILE */
+
+@media (max-width : 992px) {
+
+	.header {
+		position: relative;
+	}
+
+	body {
+		overflow: scroll;
+		display: block;
+		padding: var(--gap);
+	}
+
+	.gallery {
+		width: 100%;
+		column-width: 10em;
+		transform: scale(1);
+	}
+
+	.gallery__item:hover {
+		transform: scale(1);
+	}
+
+}
