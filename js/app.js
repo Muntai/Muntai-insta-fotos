@@ -4,7 +4,7 @@ window.onload = function() {
 
 		document.body.classList.add('loaded')
 
-		if (window.matchMedia('(min-width: 992px)').matches) { // If not mobile
+		if (window.matchMedia('(min-width: 1992px)').matches) { // If not mobile
 
 			Draggable.create('.gallery', {
 				bounds: 'body',
